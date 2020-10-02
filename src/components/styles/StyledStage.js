@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const StyledStage = styled.div`
   display: grid;
@@ -12,4 +12,4 @@ export const StyledStage = styled.div`
   width: 100%;
   max-width: 25vw;
   background: #111;
-`
+`;
