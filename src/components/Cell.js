@@ -3,7 +3,10 @@ import { StyledCell } from './styles/StyledCell';
 import { TETROMINOS } from '../tetrominos';
 
 const Cell = ({ type }) => (
-  <StyledCell type={type} color={TETROMINOS[type].color} />
+  <StyledCell type={type} color={TETROMINOS[type].color}>
+    {console.log("========= CELL RERENDER ===========")}
+  </StyledCell>
 )
 
-export default Cell;
+// use React.memo(component) to render only component that is changed.
+export default React.memo(Cell);
